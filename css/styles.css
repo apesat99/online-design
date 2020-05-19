@@ -1,0 +1,265 @@
+
+
+
+/*---Media query for tablets---*/
+/*
+@media screen and (min-width: 768px) {
+
+}
+*/
+/*--- Media query for desktop ---*/
+/*
+@media screen and (min-width: 1200px) {
+*/
+/*--General body styles --*/
+body {
+  font-size: 16fr;
+}
+
+h1 {
+  font-family: 'Poiret One', cursive;
+  font-size: 4.5em;
+  color: #ffffff;
+}
+
+h3 {
+  font-family: 'Baloo Paaji 2';
+  font-size: 1.7em;
+  color: #db006a;
+}
+
+p {
+  font-family: 'Poiret One', cursive;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+/*-- Nav bar styles --*/
+
+#nav {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Poiret One', cursive;
+}
+
+.container-fluid {
+  flex-flow: row-reverse;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #db006a;
+  text-decoration: none;
+}
+
+.link {
+  padding: 5px 20px;
+  font-size: 1.5em;
+}
+
+/*---Backround image styles ---*/
+
+.background-wrapper {
+  background-image: url(../img/macbook-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*-- Hero section styles ---*/
+
+.hero-section {
+  display: grid;
+  grid-column: 3;
+  grid-row: 5;
+  height: auto;
+}
+
+.hero-text {
+  position: relative;
+  width: 25%;
+  padding-bottom: 150px;
+}
+
+/*--- Desktop Skills section styles ---*/
+
+.skills-section {
+  background-color: #000;
+  grid-row: 5;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 100px auto auto auto 100px;
+  text-align: center;
+}
+
+.design, .build, .promote {
+  padding: 50px 100px 100px 100px;
+}
+
+.design {
+  grid-column: 2;
+}
+
+.build {
+  grid-column: 3;
+}
+
+.promote {
+  grid-column: 4;
+}
+
+/*---Desktop Footer styles ---*/
+
+footer {
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 100px auto auto 100px;
+  padding: 10px 50px;
+  font-family: 'Baloo Paaji 2';
+}
+
+.approach {
+  grid-column: 2;
+  width: 50%;
+}
+
+.contact {
+  grid-column: 3;
+}
+
+.footer-header {
+  padding-bottom: 20px;
+}
+
+.footer-content a {
+  color: #db006a;
+}
+
+span {
+  color: #db006a;
+}
+
+.social {
+  padding: 20px 0;
+}
+
+.social a {
+  color: #ffffff;
+  padding-right: 20px;
+  font-size: 1.7em;
+}
+
+.social a:hover {
+  color: #db006a;
+}
+
+.copyright {
+  grid-row: 2;
+  grid-column: 2 / 4;
+  padding-top: 20px;
+}
+
+.copyright p {
+  color: #db006a;
+}
+
+/*---Portfolio page styles for desktop ---*/
+
+.background {
+  background-color: #000;
+  padding-bottom: 200px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 100px 35% auto 100px;
+  grid-template-rows: auto;
+  grid-column-gap: 100px;
+  grid-row-gap: 100px
+}
+
+.heading-container {
+  padding: 150px 0 150px 200px;
+}
+
+.heading-container h2 {
+  color: #fff;
+  font-family: 'Poiret One', cursive;
+  font-size: 3em;
+}
+
+#carousel1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.text1 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#carousel2 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.text2 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#carousel3 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.text3 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+#carousel4 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.text4 {
+  grid-column: 3;
+  grid-row: 4;
+}
+
+#carousel5 {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.text5 {
+  grid-column: 3;
+  grid-row: 5;
+}
+
+#carousel6 {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+.text6 {
+  grid-column: 3;
+  grid-row: 6;
+}
+
+.gloat {
+  grid-column: 2 / 4;
+}
+
+.gloat h2 {
+  color: #fff;
+  font-family: 'Poiret One', cursive;
+  font-size: 2.5em;
+}
