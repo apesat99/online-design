@@ -1,40 +1,28 @@
+/*--Generic body styles for mobile --*/
 
-
-
-/*---Media query for tablets---*/
-/*
-@media screen and (min-width: 768px) {
-
-}
-*/
-/*--- Media query for desktop ---*/
-/*
-@media screen and (min-width: 1200px) {
-*/
-/*--General body styles --*/
 body {
   font-size: 16fr;
 }
 
 h1 {
   font-family: 'Poiret One', cursive;
-  font-size: 4.5em;
+  font-size: 1.5em;
   color: #ffffff;
 }
 
 h3 {
   font-family: 'Baloo Paaji 2';
-  font-size: 1.7em;
+  font-size: 1.3em;
   color: #db006a;
 }
 
 p {
   font-family: 'Poiret One', cursive;
-  font-size: 1.2em;
+  font-size: 1em;
   color: #fff;
 }
 
-/*-- Nav bar styles --*/
+/*-- Mobile Nav bar styles --*/
 
 #nav {
   background-color: #000000;
@@ -43,7 +31,7 @@ p {
 }
 
 .container-fluid {
-  flex-flow: row-reverse;
+  flex-flow: column;
 }
 
 a {
@@ -57,27 +45,26 @@ a:hover {
 
 .link {
   padding: 5px 20px;
-  font-size: 1.5em;
+  font-size: 1em;
 }
-
-/*---Backround image styles ---*/
 
 .background-wrapper {
   background-image: url(../img/macbook-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 70%;
-  height: 1000px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 20px 55% auto 20px;
+  grid-template-rows: 40% 60%;
 }
 
-/*-- Hero section styles ---*/
+/*-- Mobile Hero section styles ---*/
 
 .hero-section {
   display: grid;
+  grid-row: 2;
   grid-column: 3;
-  grid-row: 5;
+  padding
   height: auto;
 }
 
@@ -87,41 +74,346 @@ a:hover {
   padding-bottom: 150px;
 }
 
-/*--- Desktop Skills section styles ---*/
+/*--- Mobile Skills section styles ---*/
 
 .skills-section {
   background-color: #000;
   grid-row: 5;
   padding: 50px;
   display: grid;
-  grid-template-columns: 100px auto auto auto 100px;
+  grid-template-columns: 20px auto 20px;
   text-align: center;
-}
-
-.design, .build, .promote {
-  padding: 50px 100px 100px 100px;
 }
 
 .design {
   grid-column: 2;
+  grid-row: 6;
 }
 
 .build {
-  grid-column: 3;
+  grid-column: 2;
+  grid-row: 7;
 }
 
 .promote {
-  grid-column: 4;
+  grid-column: 2;
+  grid-row: 8;
+}
+
+/*---mobile Footer styles ---*/
+
+footer {
+  background-color: #000;
+  display: grid;
+  grid-template-columns: 20px auto 20px;
+  font-family: 'Baloo Paaji 2';
+}
+
+.approach {
+  grid-column: 2;
+  width: 100%;
+  text-align: center;
+}
+
+.contact {
+  padding-top: 20px;
+  grid-column: 2;
+  text-align: center;
+}
+
+.footer-header {
+  padding-bottom: 20px;
+}
+
+.footer-content a {
+  color: #db006a;
+}
+
+span {
+  color: #db006a;
+}
+
+.social {
+  padding: 20px 0;
+}
+
+.social a {
+  color: #ffffff;
+  padding: 10px;
+  font-size: 1.7em;
+}
+
+.social a:hover {
+  color: #db006a;
+}
+
+.copyright {
+  grid-column: 2;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.copyright p {
+  color: #db006a;
+}
+
+/*--- Mobile Portfolio page styles---*/
+
+.background {
+  background-color: #000;
+  padding-bottom: 100px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: 50px auto 50px;
+  grid-template-rows: auto;
+  grid-row-gap: 50px
+}
+
+.heading-container {
+  padding: 100px 0 50px 0;
+}
+
+.heading-container h2 {
+  font-size: 1.4em;
+  color: #fff;
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+}
+
+#carousel1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.text1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#carousel2 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.text2 {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+#carousel3 {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+.text3 {
+  grid-column: 2;
+  grid-row: 6;
+}
+
+#carousel4 {
+  grid-column: 2;
+  grid-row: 7;
+}
+
+.text4 {
+  grid-column: 2;
+  grid-row: 8;
+}
+
+#carousel5 {
+  grid-column: 2;
+  grid-row: 9;
+}
+
+.text5 {
+  grid-column: 2;
+  grid-row: 10;
+}
+
+#carousel6 {
+  grid-column: 2;
+  grid-row: 11;
+}
+
+.text6 {
+  grid-column: 2;
+  grid-row: 12;
+}
+
+.gloat {
+  grid-column: 2;
+}
+
+.gloat h2 {
+  font-size: 1.4em;
+}
+
+/*---Media query for tablets---*/
+
+@media screen and (min-width: 768px) {
+
+  /*--Generic body styles for tablet --*/
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h3 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+  .container-fluid {
+    flex-flow: row-reverse;
+  }
+
+  .background-wrapper {
+    grid-template-columns: 20px 60% auto 20px;
+    grid-template-rows: 25% 70%;
+    background-position: 50% 90%;
+  }
+
+  .skills-section {
+    grid-row: 5;
+    padding: 20px 0;
+    grid-template-columns: 50px auto auto auto 50px;
+  }
+
+  .design, .build, .promote {
+    padding: 20px;
+  }
+
+  .design {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .build {
+    grid-column: 3;
+    grid-row: 1;
+  }
+
+  .promote {
+    grid-column: 4;
+    grid-row: 1;
+  }
+
+/*---Tablet Footer styles ---*/
+
+footer {
+  display: grid;
+  grid-template-columns: 50px auto auto 50px;
+  padding: 10px 50px;
+}
+
+.approach {
+  grid-column: 2;
+  width: 70%;
+  text-align: left;
+}
+
+.contact {
+  grid-column: 3;
+  text-align: left;
+  padding: 0;
+}
+
+.footer-header {
+  padding-bottom: 20px;
+}
+
+.social {
+  padding: 20px 0;
+}
+
+.social a {
+  padding-right: 20px;
+  padding-left: 0;
+  font-size: 1.7em;
+}
+
+.copyright {
+  grid-row: 2;
+  grid-column: 2 / 4;
+  padding-top: 20px;
+  font-size: 1em;
+}
+
+/*---Tablet portolio styles ---*/
+
+.gallery {
+  grid-template-columns: 100px auto 100px;
+}
+
+.heading-container {
+  padding: 100px 0 50px 0;
+}
+}
+/*--- Media query for desktop ---*/
+
+@media screen and (min-width: 1200px) {
+
+/*--Desktop General body styles --*/
+
+h1 {
+  font-size: 4.5em;
+}
+
+h3 {
+  font-size: 1.7em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+/*-- Nav bar styles for desktop--*/
+
+.link {
+  font-size: 1.5em;
+}
+
+.background-wrapper {
+  background-position: 50% 70%;
+  height: 1000px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30%;
+}
+
+/*-- Desktop Hero section styles ---*/
+
+.hero-section {
+  grid-column: 3;
+  grid-row: 5;
+  height: auto;
+}
+
+.hero-text {
+  padding-bottom: 150px;
+}
+
+/*--- Desktop Skills section styles ---*/
+
+.skills-section {
+  grid-row: 5;
+  padding: 50px;
+  grid-template-columns: 100px auto auto auto 100px;
+}
+
+.design, .build, .promote {
+  padding: 50px;
 }
 
 /*---Desktop Footer styles ---*/
 
 footer {
-  background-color: #000;
-  display: grid;
   grid-template-columns: 100px auto auto 100px;
   padding: 10px 50px;
-  font-family: 'Baloo Paaji 2';
 }
 
 .approach {
@@ -150,13 +442,8 @@ span {
 }
 
 .social a {
-  color: #ffffff;
   padding-right: 20px;
   font-size: 1.7em;
-}
-
-.social a:hover {
-  color: #db006a;
 }
 
 .copyright {
@@ -165,14 +452,9 @@ span {
   padding-top: 20px;
 }
 
-.copyright p {
-  color: #db006a;
-}
-
 /*---Portfolio page styles for desktop ---*/
 
 .background {
-  background-color: #000;
   padding-bottom: 200px;
 }
 
@@ -185,7 +467,7 @@ span {
 }
 
 .heading-container {
-  padding: 150px 0 150px 200px;
+  padding: 150px 0;
 }
 
 .heading-container h2 {
@@ -262,4 +544,5 @@ span {
   color: #fff;
   font-family: 'Poiret One', cursive;
   font-size: 2.5em;
+}
 }
